@@ -2,3 +2,21 @@ compile
 run
 exit
 compile
+object Exercise1 {
+  def main(args: List[String]): Unit = {
+    Function1.test()
+    
+  }
+}
+object Function1 {
+  
+  def test() = ""
+  
+}
+object Function1 {
+  
+  def test() = ""
+  
+}
+object Function1 {
+exit
