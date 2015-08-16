@@ -6,7 +6,7 @@ object Exercise2 {
 
     // For Loop
     println((for (i <- 1L to 20L if (!(i % 2 == 0))) yield factors(i)).flatten)
-    
+
     // Map
     println(((1L to 10L) map (_ * 2L - 1L) map (factors(_))).flatten)
   }
