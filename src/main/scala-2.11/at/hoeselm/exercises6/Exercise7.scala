@@ -5,11 +5,10 @@ object Exercise7 {
   def main(args: List[String]): Unit = {
 
     val url = "http://api.openweathermap.org/data/2.5/forecast?mode=xml&lat=48&lon=16"
-    //val data: String = io.Source.fromURL(url).getLines.mkString
-    val data = scala.io.Source.fromFile("/home/ikthsm/xmltest.xml").getLines.mkString  
+    val data: String = io.Source.fromURL(url).getLines.mkString
 
     // Print data
-    //println(data)
+    println(data)
 
     //Print City
     val citypattern = """<location><name>(.*)</name>.*<country>(.*)</country>.*</location>""".r
