@@ -14,7 +14,7 @@ object Exercise1 {
 
     // c
     println(create_fib_stream(1, 1).take(10).toList)
-    
+
     // d
     println(return_next_fib(10))
 
@@ -55,12 +55,12 @@ object Exercise1 {
   def create_fib_stream(a: Int, b: Int): Stream[Int] = {
 
     Stream.cons(a, create_fib_stream(b, a + b))
-    
+
   }
-  
-  def return_next_fib(a:Int) : Option[Int] = {
-    
-    if (fibonacci_buffer(a+1).takeRight(1).head.isValidInt) Option(fibonacci_buffer(a+1).takeRight(1).head)
+
+  def return_next_fib(a: Int): Option[Int] = {
+
+    if (fibonacci_buffer(a + 1).takeRight(1).head.isValidInt) Option(fibonacci_buffer(a + 1).takeRight(1).head)
     else None
 
   }

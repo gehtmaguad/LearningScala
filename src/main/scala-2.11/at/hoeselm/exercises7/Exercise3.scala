@@ -3,8 +3,8 @@ package at.hoeselm.exercises7
 object Exercise3 {
 
   def main(args: List[String]): Unit = {
-    
-    get_all_not_hidden_files_in_dir(".").groupBy{ x => x.take(1) }.foreach(x => println(x._1,x._2.size))
+
+    get_all_not_hidden_files_in_dir(".").groupBy { x => x.take(1) }.foreach(x => println(x._1, x._2.size))
 
   }
 
