@@ -11,18 +11,19 @@ object Exercise3 {
     println(first_recursive(List('a', 't', 'o', 's'), 2))
 
   }
-  
+
   def first_take[A](items: List[A], count: Int): List[A] = {
-    
+
     items.take(3)
-    
+
   }
-  
+
   def first_fold_left[A](items: List[A], count: Int): List[A] = {
-    
+
     items.foldLeft[List[A]](Nil)({
-      (a: List[A], i: A) => if (a.size >= count) a else i :: a})
-    
+      (a: List[A], i: A) => if (a.size >= count) a else i :: a
+    })
+
   }
 
   def first_loop[A](items: List[A], count: Int): List[A] = {
